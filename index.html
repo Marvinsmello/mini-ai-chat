@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mini AI Chat</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="app">
+
+    <!-- Header with the app name and the model -->
+    <header class="app-header">
+      <h1>Mini AI Chat</h1>
+      <p class="model">Model: openrouter/free</p>
+    </header>
+
+    <!-- Part 1: API key settings -->
+    <section class="key-section">
+      <label for="api-key">OpenRouter API key</label>
+      <div class="key-row">
+        <input type="password" id="api-key" placeholder="Paste your key here">
+        <button type="button" id="save-key">Save</button>
+        <button type="button" id="forget-key">Forget key</button>
+      </div>
+      <p id="key-message" class="note">Your key stays in this browser. Your questions are sent to OpenRouter and its model provider, so only use non-sensitive test data.</p>
+    </section>
+
+    <!-- Part 2: the conversation -->
+    <section class="conversation-section">
+      <h2>Conversation</h2>
+      <div id="conversation" class="conversation"></div>
+      <p id="status" class="status">Status: Ready</p>
+    </section>
+
+    <!-- Part 3: the question form -->
+    <form id="question-form" class="question-form">
+      <label for="question">Your question</label>
+      <div class="question-row">
+        <textarea id="question" rows="3" placeholder="Type a question..."></textarea>
+        <button type="submit" id="send">Send</button>
+      </div>
+    </form>
+
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
