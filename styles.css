@@ -80,6 +80,17 @@ button {
   color: white;
 }
 
+#forget-key {
+  background: var(--red);
+  border-color: var(--red);
+  color: var(--white);
+}
+
+#forget-key:hover {
+  background: #8f1d18;
+  border-color: #8f1d18;
+}
+
 button:disabled {
   opacity: 0.6;
   cursor: not-allowed;
