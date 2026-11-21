@@ -6,7 +6,7 @@
 const settings = {
   keyName: "openrouter_api_key",
   url: "https://openrouter.ai/api/v1/chat/completions",
-  model: "openrouter"
+  model: "openrouter/free"
 };
 
 // Find the elements on the page (getElementById)
